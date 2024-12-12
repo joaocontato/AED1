@@ -50,7 +50,7 @@ int main(){
 
     
     t = clock();
-    Mergesort(0,TAM,vetor);
+    Mergesort(0,TAM-1,vetor);
     t = clock() - t; 
 
     printf("Tempo de execucao: %lf ms\n", ((double)t)/((CLOCKS_PER_SEC/1000)));
