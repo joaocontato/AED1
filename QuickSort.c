@@ -27,22 +27,23 @@ void Quicksort (int p, int r, int v[]) {
 }
 
 int main(){
-    clock_t t; //variável para armazenar tempo
+    clock_t t;  //variÃ¡vel para armazenar tempo
     int vetor[TAM];
     int a;
     
     //semente de aleatoriedade
     srand((unsigned)time(NULL));
 
-    //geração aleatório dos valores do vetor
+    //geraÃ§Ã£o aleatÃ³rio dos valores do vetor
     for(a = 0; a < TAM; a++)
         vetor[a] = rand() % TAM;
 
-    
+    //Verificando tempo de execuÃ§Ã£o do bubble sort=> t2
     t = clock(); //armazena tempo
-    Quicksort(0,TAM-1,vetor);
+    Quicksort(TAM-1,vetor);
     t = clock() - t; //tempo final - tempo 
 
+    //imprime o tempo na tela
     printf("Tempo de execucao: %lf ms\n", ((double)t)/((CLOCKS_PER_SEC/1000)));
 
     return 0;
