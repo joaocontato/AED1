@@ -2,7 +2,7 @@
 
 int main(){
 	int n, horas, minutos, segundos;
-	scanf("%d", &N);
+	scanf("%d", &n);
 	
 	horas = n / 3600;
 	n -= horas * 3600;
