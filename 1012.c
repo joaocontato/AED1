@@ -15,7 +15,7 @@ int main() {
     printf("TRAPEZIO: %.3lf\n", resultado);
     
     resultado = b*b;
-    printf("QUADRaDO: %.3lf\n", resultado);
+    printf("QUADRADO: %.3lf\n", resultado);
 
     resultado = a*b;
     printf("RETANGULO: %.3lf\n", resultado);
